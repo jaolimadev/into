@@ -1,0 +1,207 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFEFEF;
+}
+
+/*CABEÇALHO*/
+header {
+    background-color: #EFEFEF; /* Cor de fundo do cabeçalho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Ajustar o espaçamento entre os itens */
+}
+
+.logo img {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+    object-fit: contain;
+}
+
+/* Alinhar o navbar para ocupar o espaço completo entre a logo e o botão */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /* Isso faz o navbar expandir para o espaço restante */
+    margin-left: 40px;
+}
+
+/* Centralizar a lista de navegação */
+.nav-lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-grow: 1; /* Isso faz com que os links fiquem centralizados */
+}
+
+.nav-lista li a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+    background-color: #006837; /* Cor de fundo dos links */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    border-radius: 7px; /* Bordas arredondadas */
+}
+
+/* Efeito hover nos links de navegação */
+.nav-lista li a:hover {
+    background-color: #A91528; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos para o botão "Registrar-se" */
+.botao-registro {
+    text-decoration: none; /* Remover sublinhado */
+    color: white; /* Cor do texto */
+    background-color: #004d40; /* Cor de fundo do botão */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito hover no botão "Registrar-se" */
+.botao-registro:hover {
+    background-color: #8F1220; /* Cor mais escura ao passar o mouse */
+}
+
+
+/*PRIMEIRA SECAO*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #EFEFEF;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 96px;
+    color: #006837;
+    font-family: Roboto, bold;
+
+}
+
+.hero-content p {
+    margin: 1.5rem 0;
+    font-size: 32px;
+    font-family: work-sans, sans-serif;
+    color: black;
+}
+
+.btn-main {
+    padding: 0.8rem 1.5rem;
+    background-color: #8F1220;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    background-color: #004d40;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/*SEGUNDA SECAO*/
+.alimentacao-segura {
+    text-align: center;
+    padding: 50px;
+}
+
+.alimentacao-segura h2 {
+    color: #66a266;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.alimentacao-segura h1 {
+    color: #2F5233;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #E0F2E9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+}
+
+.card img {
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #2F5233;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.testimonials {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 2rem;
+    color: #006837;
+}
+
+.testimonial {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #00a859;
+    color: white;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
